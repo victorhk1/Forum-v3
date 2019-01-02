@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<section class="wrapper">
+
+  <h2>Search all posts</h2>
+  <!-- Fyll i söksträng -->
+  <input class="blue-centered" type="text" [(ngModel)]="search" placeholder="search posts..." autofocus>
+  <!-- Hämta alla inlägg som stämmer överens med söksträng (mha pipe-filtrering) -->
+  <ul *ngFor="let post of posts | filterSearch:search">
+      <li *ngIf="post.postId == null" routerLink="/post/{{ post._id }}">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.content }}</p>
+      </li>
+    </ul>
+
+</section>

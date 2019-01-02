@@ -1,0 +1,8 @@
+<app-header></app-header>
+
+<section class="wrapper" *ngIf="user">
+
+  <h2>{{user.username}}</h2>
+  <p>You can contact this user on <a href="mailto:{{user.mail}}">{{user.mail}}</a></p>
+
+</section>

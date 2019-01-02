@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<section class="wrapper" *ngIf="post">
+
+  <h2>Leave a comment on</h2>
+
+  <!-- Hämtar inlägg som ska kommenteras -->
+  <div class="op">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.content }}</p>
+  </div> 
+ 
+  <form>
+    <!-- Skriv kommentar -->
+    <textarea class="blue-centered" name="content" required autofocus [(ngModel)]="content"></textarea>
+    <!-- Publicera kommentar -->
+    <button class="blue-centered" (click)="createComment(post._id)">comment</button>
+  </form>
+
+  <!-- Avbryt kommentar och gå tillbaka till inlägget -->
+  <button class="cancel" (click)="goBack()">Cancel</button>
+
+  </section>

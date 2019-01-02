@@ -1,0 +1,60 @@
+form{
+    margin-bottom: 50px;
+}
+
+textarea:first-of-type{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.categories{
+    background: #eee;
+}
+
+.categories form{
+    margin-bottom: 40px;
+    padding: 25px;
+    text-align: center;
+}
+
+.categories input[type="text"]{
+    border: none;
+    color: #aaa;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    width: 600px;
+}
+
+.categories textarea{
+    border: none;
+    color: #aaa;
+    display: block;
+    font-size: 12px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    min-height: 75px;
+    padding: 5px;
+    width: 600px;
+}
+
+.update,
+.delete{
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 25px 0px 25px;
+    padding: 5px;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+.update{
+    background-image: linear-gradient(#1F618D, #154360);
+}
+
+.delete{
+    background-image: linear-gradient(#DC143C, #CC002C);
+    display: inline;
+}

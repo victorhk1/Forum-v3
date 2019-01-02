@@ -1,0 +1,134 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #eee;
+    font-family: OpenSans, sans-serif;
+}
+
+.wrapper{
+    margin: auto;
+    width: 960px;
+}
+
+section.wrapper{
+    margin-bottom: 50px;
+}
+
+section{
+    background: #fff;
+    box-shadow: 4px 4px 8px #ddd;
+    padding: 50px;
+    width: 100%;
+}
+
+h2{
+    font-family: 'Share Tech Mono', monospace;
+    margin-bottom: 25px;
+}
+
+p a{
+    color: #1F618D;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/***** FORMS STYLES *****/
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+button{
+    font-family: OpenSans, sans-serif;
+    outline: 0;
+}
+
+::placeholder{
+    color: #aaa;
+}
+
+input[type="text"].blue-inline{
+    border: 2px solid #1F618D;
+    color: #aaa;
+    font-size: 16px;
+    height: 26px;
+    outline: 0;
+    padding: 10px;
+    width: 600px;
+}
+
+input[type="text"].blue-centered,
+input[type="password"].blue-centered,
+input[type="email"].blue-centered{
+    background: #fff;
+    border: 2px solid #1F618D;
+    color: #aaa;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    outline: 0;
+    padding: 5px;
+    width: 600px;
+}
+
+textarea{
+    border: 2px solid #1F618D;
+    color: #aaa;
+    font-size: 12px;
+    min-height: 52px;
+    outline: 0;
+    padding: 5px;
+    width: 600px;
+}
+
+textarea.blue-centered{
+    display: block;
+    margin: auto;
+}
+
+button{
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button.cancel{
+    background: #eee;
+    border: none;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 200px;
+}
+
+button.delete{
+    background-image: linear-gradient(#DC143C, #CC002C);
+    border: none;
+    color: #fff;
+    display: block;
+    margin: auto;
+    outline: 0;
+    padding: 10px;
+    width: 200px;
+}
+
+button.blue-inline{
+    background-image: linear-gradient(#1F618D, #154360);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+}
+
+button.blue-centered{
+    background-image: linear-gradient(#1F618D, #154360);
+    border: 0;
+    color: #fff;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 200px;
+}

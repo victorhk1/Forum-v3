@@ -1,0 +1,102 @@
+.breadcrumbs ul{
+    margin-top: 14px;
+    list-style: none;
+}
+
+.breadcrumbs ul li{
+    color: #aaa;
+    cursor: default;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.breadcrumbs ul li a{
+    color: #aaa;
+    text-decoration: none;
+}
+
+.breadcrumbs ul li a:after{
+    content: "»";
+    cursor: default;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.op{
+    border: 1px solid #eee;
+    margin: 25px 0px;
+}
+
+h2{
+    font-family: 'Share Tech Mono', monospace;
+    margin: 15px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.op p.user{
+    color: #aaa;
+    font-size: 12px;
+}
+
+.op p.user a{
+    color: #aaa;
+    text-decoration: none;
+}
+
+.op p{
+    margin: 15px;
+}
+
+button.blue-centered{
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.edit{
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+.op button.edit{
+    background: #eee;
+    color: #000;
+    display: block;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.comment button.edit{
+    background: #fff;
+    color: #000;
+    display: block;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.comment{
+    background: #eee;
+    margin: auto;
+    margin-right: 0;
+    margin-bottom: 25px;
+    width: 860px;
+}
+
+.comment p.user{
+    color: #aaa;
+    font-size: 12px;
+}
+
+.comment p.user a{
+    color: #aaa;
+    text-decoration: none;
+}
+
+.comment p{
+    margin-top: -15px;
+    padding: 15px;
+}

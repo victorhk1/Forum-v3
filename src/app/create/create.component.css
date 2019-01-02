@@ -1,0 +1,19 @@
+p{
+    font-size: 14px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.category{
+    background: #eee;
+    padding: 5px;
+}
+
+textarea{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+button.blue-centered{
+    margin-bottom: 15px;
+}

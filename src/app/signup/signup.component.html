@@ -1,0 +1,22 @@
+<h1>Webbit</h1>
+<blockquote>The web side of the internet</blockquote>
+
+<section class="wrapper">
+
+  <form>
+    <!-- Skapa användarkonto genom att fylla i uppgifter -->
+    <label>Username:</label>
+    <input class="blue-centered" type="text" name="username" [(ngModel)]="username" required pattern="[A-Za-z-0-9]+">
+    <label>Password:</label>
+    <input class="blue-centered" type="password" name="password" [(ngModel)]="password" required>
+    <label>Mail:</label>
+    <input class="blue-centered" type="email" name="mail" [(ngModel)]="mail" required>
+    <!-- Skapa användare -->
+    <button class="blue-centered" (click)="createNewUser(users)">Add</button>
+  </form>
+
+  <!-- Navigera till Login -->
+  <p>Already have an account? <a routerLink="/login">Sign in</a></p>
+  
+</section>
+

@@ -1,0 +1,33 @@
+h1{
+    margin-top: 50px;
+    text-align: center;
+}
+
+blockquote{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+label{
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+label:last-of-type{
+    margin-top: 25px;
+}
+
+button.blue-centered{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+p{
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<section class="wrapper">
+  
+  <!-- Låt admin skapa ny kategori -->
+  <h2>Create new category</h2>
+  <form>
+    <input type="text" class="blue-centered" name="name" [(ngModel)]="name" placeholder="name">
+    <textarea class="blue-centered" name="description" [(ngModel)]="description" placeholder="description"></textarea>
+    <!-- Skapa -->
+    <button class="blue-centered" (click)="createCategory(category)">Add</button>
+  </form>
+
+  <!-- Låt admin redigera/radera kategori -->
+  <h2>Edit or delete category</h2>
+  <!-- Listar alla kategorier -->
+  <div class="categories" *ngFor="let category of categories">
+    <form>
+      <input type="text" name="title" [(ngModel)]="category.name">
+      <textarea name="description" [(ngModel)]="category.description"></textarea>
+      <!-- Redigera -->
+      <button class="update" (click)="updateCategory(category)">Update</button>
+      <!-- Radera -->
+      <button class="delete" (click)="deleteCategory(category)">Delete</button>
+    </form>
+  </div>
+
+</section>

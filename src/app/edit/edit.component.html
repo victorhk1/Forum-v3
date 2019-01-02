@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+<section class="wrapper">
+
+  <h2>Edit post</h2>
+  <form *ngIf="post">
+    <!-- Ändra i inlägg/kommentar -->
+    <input class="blue-centered" type="text" name="title" [(ngModel)]="post.title" required autofocus>
+    <textarea class="blue-centered" name="content" [(ngModel)]="post.content" required></textarea>
+    <!-- Genomför ändring -->
+    <button class="blue-centered" (click)="updatePost(post._id)">Update</button>
+  </form>
+
+  <!-- Avbryt ändring och gå tillbaka till inlägg -->
+  <button class="cancel" (click)="goBack()">Cancel</button>
+  <!-- Radera valt inlägg/kommentar -->
+  <button class="delete" (click)="deletePost(post._id)">Delete</button>
+
+  </section>

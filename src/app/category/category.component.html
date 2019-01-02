@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<section class="wrapper" *ngIf="category">
+
+  <!-- Nästlad navigering -->
+  <nav class="breadcrumbs">
+    <ul>
+      <li>
+        <a routerLink="/">categories</a>
+      </li>
+      <li><b>{{category.name}}</b></li>
+    </ul>
+  </nav>
+
+  <h2>Browse posts in <i>{{category.name}}</i></h2>
+  <!-- Navigera till skapa nytt inlägg -->
+  <button class="blue-centered" routerLink="/category/{{category._id}}/create">New post</button>
+  <!-- Listar alla inlägg i kategori -->
+  <ul *ngFor="let post of posts">
+    <li *ngIf="postId == null" routerLink="/post/{{post._id}}">
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.content }}</p>
+    </li>
+  </ul>
+
+  </section>

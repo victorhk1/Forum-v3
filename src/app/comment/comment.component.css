@@ -1,0 +1,29 @@
+.op{
+    background: #eee;
+}
+
+.op h3{
+    color: #777;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 18px;
+    padding: 25px;
+    padding-bottom: 0;
+}
+
+.op p{
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+    padding: 25px;
+    padding-top: 10px;
+}
+
+textarea{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-height: 100px;
+}
+
+button.blue-centered{
+    margin-bottom: 15px;
+}
